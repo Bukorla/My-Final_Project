@@ -1,0 +1,538 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100vh; */
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.container5 .history-nav {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /* position: fixed;
+  top: 0; */
+  /* left: 0; */
+  align-items: center;
+  justify-content: center;
+  background-image:linear-gradient(45deg,violet,indigo,cyan,violet) ;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  animation: zoom 5s infinite;
+}
+
+@keyframes zoom {
+  from {
+    background-image:linear-gradient(45deg,violet,indigo,cyan,violet) ;
+  }
+  to {
+    background-image:url('../images/x-mas3.png') ;
+  
+}
+}
+
+.history-nav .overlay {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(76, 0, 130, 0.331);
+}
+
+.history-nav img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.history-nav ul {
+  display: flex;
+  width: 100%;
+  /* height: 80%; */
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.history-nav li {
+  display: flex;
+  gap: 10px;
+ 
+}
+
+.history-nav li a {
+  font-size: 20px;
+  color: white;
+}
+
+.history-nav li a:hover {
+  text-decoration: underline;
+}
+
+.history-nav .Chimera-logo {
+  display: flex;
+  /* width: 60%; */
+  align-items: center;
+  /* justify-content: center; */
+  font-size: 26px;
+  /* color: white; */
+  background-size: linear;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+   z-index: 2;
+   background-image: linear-gradient(45deg,orange,gold,white,grey);
+
+}
+
+.drop-down {
+  position: relative;
+  display: inline-block;
+  width:14% ;
+  height: 90px;
+  justify-content: center;
+ 
+}
+
+.drop-down .hover {
+display: flex;
+width: 70%;
+/* height: 67%; */
+justify-content: center;
+margin: 2.1rem;
+font-size:20px ;
+gap: 10px;
+}
+
+.hover a {
+color: white;
+font-size:21px;
+}
+
+.hover i {
+color: gold;
+}
+
+.dropdown-contents {
+display: none;
+position: absolute;
+background-image: linear-gradient(45deg,grey,white,grey);
+width: 89%;
+box-shadow: 0 8px 16px 0 rgba(255, 192, 203, 0.679);
+padding: 12px 16px;
+margin: 0 10px;
+z-index: 1;
+font-size: 20px;
+}
+
+.drop-down .links a {
+display: flex;
+color: indianred;
+}
+
+.links a:hover {
+color: blue;
+text-decoration: underline;
+}
+
+.drop-down:hover  .dropdown-contents {
+  display: block;
+}
+
+.history-nav a:hover {
+ text-decoration: underline 1px solid;
+}
+
+.Chimera-logo img {
+animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+from {
+  transform: rotate(360deg) ;
+}
+}
+
+
+.container5 .home-about {
+    display: flex;
+    width: 100%;
+    font-size: 25px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.home-about span,a {
+    display: flex;
+    width: 160px;
+    justify-content: center;
+    color: chartreuse;
+}
+
+.home-about a {
+    border-right: 1px solid;
+    background-size: linear;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* border-radius: 18px; */
+    z-index: 2;
+    background-image: linear-gradient(45deg,violet,violet,deeppink,blue,white);
+   
+}
+
+.home-about a:hover {
+    animation: spinning 4s infinite;
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+.history,.images {
+    width: 50%;
+}
+
+.container5 .main-contents {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    gap: 2rem;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 0 2rem;
+    /* align-items: center; */
+}
+
+.main-contents .history {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.history h1 {
+    font-size: 50px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+     /* border-radius: 18px; */
+     z-index: 2;
+     background-image: linear-gradient(45deg,violet,violet,blue,aqua,white);
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+.history .contents {
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    height: 80%;
+    gap: 1rem;
+ 
+}
+
+.history p {
+    font-size: 24px;
+}
+
+.main-contents .images {
+    display: flex;
+    flex-direction: column;
+    width: 990px;
+    height: 560px;
+    align-items: center;
+    justify-content: center;
+    /* margin: 3rem; */
+    /* padding-top: 4rem; */
+    border-radius: 10px;
+    background-image: url('./view-images/chimera1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    from {
+        background-image: url('./view-images/chimera1.png');
+    }
+    to {
+        background-image: url('./view-images/chimera5.png');
+    }
+
+}
+
+ .history-footer {
+    display: flex;
+    width:100%;
+    height: 80%;
+    /* gap:6rem; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr ; */
+    align-items:center;
+    justify-content: center;
+    background-image:linear-gradient(45deg,orange,indigo,lightblue,violet,cyan,pink);
+  }
+  
+  .history-footer .overlay {
+    display:flex;
+    /* flex-direction:column; */
+    align-items:center;
+    justify-content:center;
+    background:rgba(76, 0, 130, 0.165);
+    /* background-color: grey; */
+    width:100% ;
+    height:100%;
+    /* gap: 2rem; */
+  }
+  
+  .history-footer img {
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    animation: turn 5s linear infinite;
+  
+  }
+  
+  @keyframes turn {
+    from {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .history-footer .folios  {
+    display:grid;
+    width:80%;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:10px;
+    align-items:center;
+    justify-content: center;
+  } 
+  
+   .folios .services {
+    display:flex;
+    flex-direction:column;
+    /* width: 70%; */
+    /* height: 100%; */
+    gap:1rem;
+    align-items:center;
+    justify-content:center;
+   
+  }
+  
+  .services .heading {
+    display: flex;
+    width:198px;
+    gap:8px;
+    align-items:center;
+    justify-content:end;
+    /* padding-top: 10px; */
+  }
+  
+  .services ul {
+    display:flex;
+    flex-direction:column;
+    width:95%;
+    /* height:55%; */
+    gap:1rem;
+    align-items: center;
+  
+  }
+
+  
+  .services ul li a {
+    display:flex;
+    flex-direction: column;
+    width:360px;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    font-size: 20px;
+    
+  }
+  
+  .company {
+    display:flex;
+    flex-direction:column;
+    /* width: 60%; */
+    /* height: 100%; */
+    gap:1rem;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .company ul {
+    display:flex;
+    flex-direction:column;
+    /* width:370px; */
+    /* height:55%; */
+    gap:10px;
+    align-items: center;
+    /* margin: 10px; */
+  }
+  
+  .company li a {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .folios h3 {
+    color:white;
+    font-size:30px;
+    /* margin: 10px; */
+    background-size: linear;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+    background-image: linear-gradient(45deg, #41a5ee,cyan,#2065c2,violet,gold,orange);
+  }
+  
+  .legal {
+    display:flex;
+    flex-direction:column;
+    /* width: 60%; */
+    /* height: 100%; */
+    gap:1rem;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .legal ul {
+    display:flex;
+    flex-direction:column;
+    width:86%;
+    /* height:55%; */
+    gap:1rem;
+    align-items: center;
+  }
+  
+  .legal li a {
+    display:flex;
+    flex-direction: column;
+    width:190px;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .folios li a:hover {
+    color: violet;
+    text-decoration: underline;
+    background-size: linear;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+    background-image: linear-gradient(45deg,orange,white,gold,grey);
+    transition: 400ms ease-in-out;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation:glow 1s ease-in-out infinite alternate ;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  .footer .our-contacts {
+    display: flex;
+    width: 30%;
+    height: 56%;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    /* margin: 10px; */
+  }
+  
+  .our-contacts .offices {
+    display: flex;
+    width: 220px;
+    /* height: 58px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* margin: 1rem; */
+  }
+  
+  .offices .fonts {
+    display: flex;
+    width: 170px;
+    height: 68px;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    /* margin: 5px; */
+  }
+  
+  .fonts i {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    align-items: end;
+    justify-content: center;
+  }
+  
+  .our-contacts h3 {
+    font-size: 27px;
+    background-size: linear;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+    background-image: linear-gradient(45deg,lightblue,orangered,violet,blue,gold);
+  }
+  
+  .our-contacts .places {
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    height: 40%;
+    align-items:center;
+    gap:10px;
+    margin: 1rem;
+  }
+  
+  
+  .places span {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height: 25px;
+    font-size:20px;
+    align-items :center;
+  }
+  
+  .our-contacts .location {
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }

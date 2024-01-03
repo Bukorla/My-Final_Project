@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chimera Prime</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/61a764966b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/61a764966b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.onload = function() {
+        var myIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("section");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel,9500);   
+          }
+          // var interval = 8 * 60 * 1000;
+          // var timer = setInterval (function () {
+          //     slide ();
+          //   }, interval);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container" id="section1">
+      <div class="landing-page " >
+        <div class="nav">
+         <div class="overlay">
+            <ul>
+              <li class="Chimera-logo">
+                <img src="./images/chimera-logo.png" alt="chimera-logo" />
+                Chimera Prime
+              </li>
+              <div class="drop-down">
+                <div class="hover">
+                  <a href="./hubspot-services.html">Services</a>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="dropdown-contents">
+                  <div class="links">
+                    <a href="./view.html">Self-managed Teams</a>
+                    <a href="./hubspot-services.html"> Hubspot Services for Marketing Agencies</a>
+                  </div>
+                </div>
+              </div>
+              <li>
+                <a href="./clients.html">Clients</a>
+              </li>
+              <div class="drop-down">
+                <div class="hover">
+                  <a href="./history.html">About Us</a>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="dropdown-contents">
+                  <div class="links">
+                    <a href="./history.html"> History</a>
+                    <a href="./core-values.html"> Core Values</a>
+                    <a href="#"> Board of Directors</a>
+                    <a href="#"> Social Responsibility</a>
+                    <a href="#"> Skills Directory</a>
+                  </div>
+                </div>
+              </div>
+              <li>
+                <a href="./portfolio.html"> Producer</a>
+              </li>
+              <li>
+                <a href="./index.html">Blog</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+         </div>
+        </div>
+        <div class="contents">
+          <div class="title">
+            <ul>
+              <li>
+                <h1>Empowering Growth With Seamless Technical Solutions</h1>
+              </li>
+              <li>
+                <h4>
+                  Your Trusted Partner for Maximizing Impact and Results
+                </h4>
+              </li>
+            </ul>
+            <a href="#section2">Let Explore</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="container2" id="section2">
+      <div class="main-contents">
+        <div class="our-apps">
+          <div class="images">
+           <div class="image">
+            <img src="./images/aws.png" alt="aws" />
+           </div>
+           <div class="image">
+            <img src="./images/hubspot.png" alt="hubspot" />
+           </div>
+           <div class="image cloud">
+            <img src="./images/google-cloud.png" alt="google-cloud" />
+           </div>
+              <div class="image">
+                <img src="./images/node.png" alt="node" />
+              </div>
+            <div class="react">
+              <img src="./images/react-native.png" alt="react native" />
+              <span> React Native</span>
+            </div>
+            <div class="react">
+              <img src="./images/react-native.png" alt="react native" />
+              <span>React</span>
+            </div>
+            <div class="view">
+              <a href="#">View all</a>
+              <i class="fa-solid fa-arrow-right fa-beat"></i>
+            </div>
+           
+          </div>
+        </div>
+        <div class="services">
+        
+          <div class="services-contents">
+            <div class="heading">
+              <h1>
+                Services
+              </h1>
+            </div>
+            <div class="start-ups">
+              <img src="./services-image/startups.png" alt="startups">
+              <div class="content">
+                <h1>Self-managed Teams For Startups</h1>
+                <p>
+                  Hire a team of Developers, Designers, Quality Assurance Specialists, DevOps Engineers, and other experts you may need to work hand-by-hand on your digital product.
+                </p>
+                <div class="view">
+                  <a href="./view.html">View managed-teams </a>
+                  <i class="fa-solid fa-arrow-right fa-beat"></i>
+                </div>
+              </div>
+             
+           
+            </div>
+            <div class="marketing-agencies">
+
+              <div class="content">
+                <h1>HubSpot Services for Marketing Agencies</h1>
+                <p>HubSpot services include Marketing Hub, Sales Hub, Service Hub, CMS Hub, Operations Hub, and Onboarding.</p>
+                <div class="view">
+                  <a href="./hubspot-services.html">View Hubspot</a>
+                  <i class="fa-solid fa-arrow-right fa-beat"></i>
+                </div>
+              </div>
+              <img src="./services-image/marketing.png" alt="marketing">
+  
+            </div>
+          </div>
+        </div>
+        <div class="clients">
+          <h2>Featured Clients</h2>
+          <div class="featured-clients">
+            <div class="digital-marketing main-contents">
+              <div class="overlay">
+                <div class="logo">
+                      <div class="image">
+                          <img src="./clients-images/digital-logo.png" alt="digital-logo"  width="70px" height="40px">
+                      </div>
+                      <a href="#"> Digital marketing for B2B companies</a>
+                 </div>
+                  <div class="about">
+                      Anders Hermansson
+                      <p>CEO & Co-founder,Business Reflex</p>
+                  </div>
+              </div>
+            </div>
+            <!-- <div class="modern-digital-marketing main-contents">
+              <div class="overlay">
+                  <div class="logo">
+                      <div class="image">
+                          
+                      <img src="./clients-images/coupler-logo.png" alt="modern-digital-marketing logo" class="coupler">
+                      </div>
+                      <a href="#">Mordern Digital Marketing</a>
+                  </div>
+                  <div class="about">
+                      Siguard J. Vik
+                      <p>Managing Director,Coupler</p>
+                  </div>
+            </div> -->
+            <div class="spond main-contents">
+                <div class="overlay">
+                    <div class="logo">
+                        <div class="image">
+                            <img src="./clients-images/spond-logo.png" alt="spond-logo" width="70px" height="60px">
+                        </div>
+                        <a href="#">Best free sports team management app</a>
+                   </div>
+                    <div class="about">
+                        Oleg Topchiy
+                        <p>CTO Spond</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+         <div class="see">
+            <a href="./clients.html">See More...</a>
+            <i class="fa-solid fa-arrow-right fa-beat"></i>
+         </div>
+        </div>
+        <div class="about-us">
+          <div class="topic">
+            <h1> What Our Clients Say About Us</h1>
+          </div>
+          <div class="first-choice section section1">
+            <img src="./services-image/first-choice.png" alt="first-choice" width="50px" height="50px">
+            <div class="content">
+              <h1>First Choice</h1>
+              <p>"They always come to our minds first when our clients ask for visual identity,web development, Hubspot integration or digital transformation."</p>
+              <div class="name">
+                <span>Siguard J. Vik</span>
+                <div class="text">
+                  <p>Strategy Director & Founder at <span>Coupler</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="outstanding-tech section section2">
+            
+            <img src="./services-image/outstanding-tech.png" alt="outstanding-tech" width="50px" height="50px">
+            <div class="content">
+              <h1>Outstanding tech</h1>
+              <p>"One of the reasons we are doing so well is because of the technology you guys are developing for us. It sets us apart from everyone"</p>
+              <div class="name">
+                <span>Siyanda Mthethwa</span>
+                <div class="text">
+                  <p>Founder at <span>Kuloola,</span> Rising Star in South Africa</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="committed-team section section3">
+            
+            <img src="./services-image/committed-team.png" alt="committed-team" width="50px" height="50px">
+            <div class="content">
+              <h1>Committed team</h1>
+              <p>"We have been working with Chimera hand in hand from the very begining.We could count on their expertise at all development stages.From product design to market release and on-going tech support. They were as passionate about the project as our own team." </p>
+              <div class="name">
+                <span>Anders Glorvigen</span>
+                <div class="text">
+                  <p>Co-founder at <span>Daily Fantasy Scout</span></p>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          <div class="open-minded section section4" >
+            
+            <img src="./services-image/open-minded.png" alt="open-minded" width="50px" height="50px"> 
+            <div class="content">
+              <h1>Open-minded</h1>
+              <p>"working with the Chimera team was very productive. They were really dedicated to developing something unique.Together we created  an innovative solution that has no actual competition on the market."</p>
+              <div class="name">
+                <span>Peder</span>
+                <div class="text">
+                  <p>Founder at <span>RoadTech</span></p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="proactive section section5">
+            
+            <img src="./services-image/proactive-attitude.png" alt="proactive-attitude" width="50px" height="50px">
+            <div class="content">
+              <h1>Proactive attitude</h1>
+              <p>"Really enjoyed developing my project with Chimera Prime.The team was very inquisitive about my idea for the e-learning platform and they delivered a fully functional MVP within three months."</p>
+              <div class="name">
+                <span>Tatiana Penzo</span>
+                  <div class="text">
+                    Founder at <span>Penzo</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="individual-approach section section6">
+            
+            <img src="./services-image/individual-approach.png" alt="individual-approach" width="50px" height="50px">
+            <div class="content">
+              <h1>Individual Approach</h1>
+              <p>"Chimera has built a website that is tailor-made to our needs.It is clean and well-designed,and at the same time easily customisable.We can update it on our own whenever we need."</p>
+              <div class="name">
+                <span>Thomas Midthjell</span>
+                <div class="text">
+                  CTO at <span>Procano</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="our-blogs">
+          <div class="contents">
+            <div class="hubspot blogs">
+              <div class="picture">
+                <img src="./services-image/computer c.png" alt="hubspot" width="50px" height="50px">
+                23,August 2023
+              </div>
+              <div class="topic">
+                <h3>How to Migrate My Website to Hubspot? A step-By-Step Guide </h3>
+                
+              </div>
+              <p>Migrating your website to Hubspot can be a great move if you're looking for all-in-one...</p>
+            </div>
+            <div class="theme blogs">
+              <div class="picture">
+                <img src="./services-image/theme.png" alt="theme" width="50px" height="50px">
+                08,August 2023
+              </div>
+              <h3>Hubspot Theme Vs Custom Development</h3>
+              <p>So you've decided to build a website,huh? That's fantastic! Now comes the tricky part...</p>
+            </div>
+            <div class="slack-integration blogs">
+              <div class="picture">
+                <img src="./services-image/career-img.png" alt="career" width="50px" height="50px">
+                05,July 2023
+              </div>
+              <h3>HubSpot and Slack integration = Communication Magic </h3>
+              <p>Ever feel like managing  business communication ? it is like juggling flaming torches ... </p>
+            </div>
+          </div>
+          </div>
+          <div class="home">
+            <a href="#section1">Home</a>
+            <i class="fa-solid fa-arrow-turn-up fa-bounce"></i>
+          </div>
+      </div>
+      <div class="footer">
+        <div class="overlay">
+            <div class="folios">
+                <div class="services titles">
+                    <div class="heading">
+                        <img src="./images/chimera-logo.png" alt="chimera-Logo">
+                        <h3>Services</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./view.html">Self-managed Teams</a>
+                        </li>
+                        <li>
+                            <a href="hubspot-services.html">Hubspot Services for Marketing Agencies</a>
+                        </li>
+                        <li>
+                           <a href="./hubs-portfolio.html"> Our Hubspot Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="company titles">
+                    <h3 >Company</h3>
+                    <ul>
+                        <li>
+                           <a href="./history.html"> History</a>
+                        </li>
+                        <li>
+                           <a href="./core-values.html"> Core Values</a>
+                        </li>
+                        <li>
+                           <a href="#"> Social Responsibility</a>
+                        </li>
+                        <li>
+                            <a href="#">  Board of Directors</a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html">Your web producer</a>
+                        </li>
+                        <li>  
+                           <a href="./index.html"> Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="legal titles">
+                    <h3>Legal</h3>
+                    <ul>
+
+                        <li>
+                           <a href="#"> Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#"> Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="our-contacts">
+                <div class="offices">
+                    <div class="fonts">
+                        <i class="fa-brands fa-square-facebook fa-beat fa-lg" style="color: cyan;"></i>
+                        <i class="fa-brands fa-instagram fa-beat-fade fa-lg" style="color: cyan;"></i>
+                        <i class="fa-brands fa-linkedin fa-bounce fa-lg" style="color: cyan;"></i>
+                    </div>
+                    <h3>Offices</h3>
+                </div>
+                <div class="headquarters places">
+                    <h3>Head-quarter</h3>
+                    <div class="location">
+                        <span>
+                            Torgatta 13,0181
+                        </span>
+                        <span>
+                            Oslo Norway
+                        </span>
+                        <span>
+                            +(47) 930 45 196
+                        </span>
+                    </div>
+                </div>
+                <div class="warsaw-office places">
+                    <h3>Warsa-office</h3>
+                    <div class="location">
+                        <span>
+                            Złota 59, 00-120
+                        </span>
+                        <span>
+                            Warsaw, Poland
+                        </span>
+                        <span>
+                            (+48) 505 316 553
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    </div>
+  </body>
+</html>
+
+<!-- Aperçu Mono,
+DM Sans,
+Inter,
+Libre Franklin,
+Playfair Display.
+Poppins,
+Raleway,
+Roboto, -->

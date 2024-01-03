@@ -1,0 +1,1176 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height:100dvh; */
+    gap: 84rem;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+
+.container .clients {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 6rem;
+    
+    /* background-image: linear-gradient(45deg,grey,white,grey,grey); */
+}
+
+.clients .clients-nav {
+  display: flex;
+  width: 100%;
+  /* height: 15vh; */
+  /* height: 10%; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; */
+  background-image:url('../images/x-mas3.png') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+  .clients-nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .clients-nav ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+  }
+
+  .clients-nav li {
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+  }
+
+  .clients-nav li a {
+    color: white;
+  }
+
+  .clients-nav li a:hover {
+    text-decoration: underline;
+    color: cyan;
+  }
+
+  .clients-nav li a::after {
+    text-decoration:underline;
+    color: #e60073;
+  } 
+
+  .clients-nav .Chimera-logo {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    background-size: linear;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+    background-image: linear-gradient(45deg,orange,white,gold,grey);
+    transition: 400ms ease-in-out;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation:glow 1s ease-in-out infinite alternate ;
+    animation: glow 1s ease-in-out infinite alternate;
+
+  }
+
+  
+@-webkit-keyframes glow{
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff,0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+} 
+
+  .clients-nav .drop-down {
+    position: relative;
+    display: inline-block;
+    width:14% ;
+    height: 90px;
+    justify-content: center;  
+}
+
+.clients-nav .drop-down .hover {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: 2.1rem;
+    font-size:20px ;
+    gap: 10px;
+  }
+
+  .clients-nav .hover a {
+    color: white;
+  }
+
+  .hover i {
+    color: gold;
+  }
+  
+  .dropdown-contents {
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(45deg,grey,white,grey);
+    width: 89%;
+    box-shadow: 0 8px 16px 0 rgba(255, 192, 203, 0.679);
+    padding: 12px 16px;
+    margin: 0 10px;
+    z-index: 1;
+    font-size: 20px;
+  }
+  
+  .drop-down .links a {
+    display: flex;
+    color: indianred;
+  }
+  
+  .links a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .drop-down:hover  .dropdown-contents {
+     display: block;
+  }
+  
+   .nav a:hover {
+     text-decoration: underline 1px solid;
+  }
+  
+  .Chimera-logo img {
+    animation: rotate 5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(360deg) ;
+    }
+  }
+
+  .clients .featured-clients {
+    display: flex;
+    width:100%;
+    /* height: 100%; */
+    flex-direction:column;
+    margin:10px;
+    gap:2rem;
+    align-items:center ;
+    justify-content: center;
+    /* background-image: linear-gradient(45deg,white,grey,white,grey,white); */
+    
+  }
+
+  .featured-clients .home-clients {
+    display:flex;
+    width: 80%;
+    height: 40%;
+    gap:2rem;
+    /* align-items :center; */
+    /* justify-content:center; */
+  }
+
+
+
+  .home-clients a ,span {
+    display:flex;
+    width:120px;
+    align-items: center;
+    /* justify-content:center; */
+  }
+
+  .home-clients a {
+    border-right:1px solid;
+    font-size: 26px;
+    background-size: linear;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+    background-image: linear-gradient(45deg,indigo,cyan,violet,violet);
+    
+  }
+
+  .home-clients span {
+    font-size :26px;
+    color:#e60073;
+  }
+
+  .home-clients a:hover {
+    text-decoration:underline;
+    animation:spin-to 5s linear infinite;
+  }
+
+  @keyframes spin-to {
+    from {
+        transform:rotate(360deg);
+    }
+  }
+
+  .Clients-contents  {
+    display:flex;
+    flex-direction:column;
+    width:90%;
+    /* height:100%; */
+    gap:2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Clients-contents .title {
+    display:flex;
+    flex-direction:column;
+    width:90%;
+    /* height:35%; */
+    gap:1rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .Clients-contents .title h1 {
+    font-size:40px;
+    background-size: linear;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+    background-image: linear-gradient(45deg,
+    #41a5ee,cyan,#2065c2,violet,gold,orange);
+  }
+
+  .title p {
+    font-size:25px;
+  }
+
+  .Clients-contents .what-we-have {
+        display:grid;
+        width: 94%;
+        height: 97%;
+        grid-template-columns:1fr 1fr 1fr;
+        gap:1rem;
+        justify-content: center;
+        align-items: center;
+  }
+
+  .what-we-have .main-contents {
+       display:flex;
+       width: 330px;
+       height:250px;
+      flex-direction:column;
+      /* gap:1rem; */
+      border:1px solid;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      /* position: relative; */
+
+  }
+
+  .main-contents .logo {
+    display: flex;
+    width:100% ;
+    /* height: 69%; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    /* margin: 4px; */
+
+  } 
+
+  .main-contents .logo .image {
+    display: flex;
+    width:150px;
+    /* height:; */
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+
+  .logo a {
+    display:flex;
+    flex-direction:column;
+    width: 80px;
+    align-items:center;
+    justify-content: center;
+    padding: 0 19px;
+  }
+
+  .main-contents .about {
+    display: flex;
+    width: 100%;
+    /* height: 45px; */
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    font-size:21px;
+    color:white;
+  }
+
+  .about p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  .main-contents .logos {
+    width: 80px;
+    height: 70px;
+  }
+
+  .what-we-have .vittipa-logo,.drilly,.sports-xpert-logo,.penzo-logo,.procano-logo,.road-tech-logo,.coupler,.pioner-labs-logo {
+    border-radius: 10px;
+  }
+
+  .what-we-have .penzo-logo,.sports-xpert-logo,.road-tech-logo,.procano-logo,.pioner-labs-logo , .coupler {
+    width:95px ;
+    height: 40px;
+  }
+
+  .coupler {
+    width: 190px;
+    height: 50px;
+  }
+
+  .mordern-digital-marketing .image {
+    display:flex;
+    width:70px;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .digital-marketing {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-image: url('./clients-images/digital-marketing2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change-from 6s infinite;
+   
+
+  }
+
+  @keyframes change-from {
+    from {
+      background-image: url('./clients-images/digital-marketing2.png');
+    }
+
+    to {
+      background-image: url('./clients-images/digital-marketing.png');
+    }
+  }
+
+  .digital-marketing .about p {
+    width:390px ;
+  }
+
+  .main-contents .overlay {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background:rgba(0, 0, 0, 0.542);
+    width:100% ;
+    height:100%;
+    content: '';
+    gap: 2rem;
+    border-radius: 5px;
+    border-width: 5px;
+   border-style: solid;
+   box-shadow: 8px 8px 8px  palevioletred;
+    border-image: linear-gradient(90deg,orange,orangered,brown,rgba(0, 0, 255, 0.548),lightblue,rgba(0, 128, 0, 0.576),cyan) 1;
+    animation: color 4s infinite;
+  }
+
+  @keyframes color {
+    from {
+      border-image: linear-gradient(90deg,orange,orangered,brown,rgba(0, 0, 255, 0.548),lightblue,rgba(0, 128, 0, 0.576),cyan) 1 ;
+    }
+
+    to {
+      border-image: linear-gradient(45deg,orange,white,blue,pink) 1;
+   
+    }
+  }
+
+  .modern-digital-marketing {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-image: url('./clients-images/modern-digital-marketing.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide-from 6s infinite;
+    
+  }
+
+  @keyframes slide-from {
+    from {
+      background-image: url('./clients-images/modern-digital-marketing.png');
+    }
+
+    to {
+      background-image: url('./clients-images/mordern-digital-marketing2.png');
+    }
+  }
+
+  
+
+  .logo a {
+    /* width: 290px; */
+    font-size: 28px;
+    color:white;
+  }
+
+  .logo a:hover {
+    text-decoration: underline;
+    background-size: linear;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+    background-image: linear-gradient(45deg, #41a5ee,cyan,#2065c2,violet,gold,orange);
+  }
+
+
+  @keyframes change-from {
+    from {
+      background-image: url('./clients-images/digital-marketing2.png');
+    }
+
+    to {
+      background-image: url('./clients-images/digital-marketing.png');
+    }
+  }
+
+  .digital-marketing a {
+    color: rgba(255, 255, 0, 0.959);
+  }
+
+  .about p {
+    color:  orchid;
+  }
+
+  .modern-digital-marketing a {
+    color: rgb(0, 255, 255);
+  }
+
+  
+  .what-we-have .spond {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-image: url('./clients-images/sports.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: zoom-from 6s infinite;
+  }
+
+  @keyframes zoom-from {
+    from {
+      background-image: url('./clients-images/sports.png');
+    }
+
+    to {
+      background-image: url('./clients-images/sport2.png');
+    }
+  }
+
+  .spond a {
+    color: rgba(255, 68, 0, 0.936);
+  }
+
+  .what-we-have .energy {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-image: url('./clients-images/roadtech.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: move-from 6s infinite;
+    gap: 2rem;
+  }
+
+  .energy .about {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+  }
+
+  @keyframes move-from {
+    from {
+      background-image: url('./clients-images/roadtech.png');
+    }
+
+    to {
+      background-image: url('./clients-images/roadtech2.png');
+    }
+  }
+
+
+  .energy a {
+    font-size:23px;
+    color:rgba(238, 130, 238, 0.984);
+  }
+
+  .energy .about span {
+    width:200px;
+  }
+
+  .what-we-have .ework-group {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-image: url('./clients-images/talent-solutions.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: changing 6s infinite;
+    gap:2rem;
+  }
+
+  @keyframes changing {
+    from {
+      background-image: url('./clients-images/talent-solutions.png');
+    }
+
+    to {
+      background-image: url('./clients-images/talent-solutions2.png');
+    }
+  }
+
+  .ework-group .about {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+  }
+
+  .what-we-have .newmark {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-image: url('./clients-images/new-mark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: moving 6s infinite;
+    gap:1rem;
+   }
+  
+  
+   @keyframes moving {
+    from {
+      background-image: url('./clients-images/data-management.png');
+    }
+  
+    to {
+      background-image: url('./clients-images/data-management2.png');
+    }
+  }
+  
+  .newmark a {
+    color: #e60073;
+  }
+  
+  .newmark .about {
+     display:flex;
+      flex-direction:column;
+      gap:10px;
+  }
+
+  .what-we-have .homes {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-image: url('./clients-images/2homes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: moves 6s infinite;
+  }
+  
+  
+  @keyframes moves {
+    from {
+      background-image: url('./clients-images/2homes.png');
+    }
+  
+    to {
+      background-image: url('./clients-images/2homes2.png');
+    }
+  }
+  
+  .homes a {
+    color:rgb(0, 0, 255);
+  }
+  
+  
+   @keyframes moving {
+    from {
+      background-image: url('./clients-images/data-management.png');
+    }
+  
+    to {
+      background-image: url('./clients-images/data-management2.png');
+    }
+  }
+  
+  .newmark a {
+    color: #e60073;
+  }
+  
+  .newmark .about {
+     display:flex;
+      flex-direction:column;
+      gap:10px;
+  }
+
+  
+.what-we-have .kuloola {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-image: url('./clients-images/kuloola.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: style 6s infinite;
+  /* gap:1rem; */
+}
+
+@keyframes style {
+  from {
+    background-image: url('./clients-images/kuloola.png');
+  }
+
+  to {
+    background-image: url('./clients-images/kuloola2.png');
+  }
+}
+
+.kuloola .logo {
+  width: 300px;
+  height: 100px;
+}
+
+.kuloola a {
+  color:cyan;
+}
+
+.kuloola .about {
+   display:flex;
+      flex-direction:column;
+      gap:10px;
+}
+
+.what-we-have .athene {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  background-image: url('./clients-images/athene.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: styling 6s infinite;
+  /* gap:1rem; */
+}
+
+@keyframes styling {
+  from {
+    background-image: url('./clients-images/athene.png');
+  }
+
+  to {
+    background-image: url('./clients-images/athene-group-featured.png');
+  }
+}
+
+.athene .about {
+    display:flex;
+      flex-direction:column;
+      /* gap:10px; */
+}
+
+.athene .logo {
+  display:flex;
+  flex-direction:column;
+  /* gap:8px; */
+}
+
+.what-we-have .Vitippa {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-image: url('./clients-images/sports2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: styling-for 6s infinite;
+  /* gap:1rem; */
+}
+
+
+@keyframes styling-for {
+  from {
+    background-image: url('./clients-images/sports2.png');
+  }
+
+  to {
+    background-image: url('./clients-images/sports.png');
+  }
+}
+
+.logo .vittipa {
+  width:60px;
+  height:50px;
+  border-radius:10px;
+}
+
+.Vitippa a {
+  color :violet;
+}
+
+.logo .log {
+  border-radius :10px;
+}
+
+.vitippa .about {
+  display:flex;
+      flex-direction:column;
+      gap:10px;
+}
+
+
+.what-we-have .drilly-fantasy-scout {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-image: url('./clients-images/football2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: styling-to 6s infinite;
+  /* gap:1rem; */
+}
+
+
+@keyframes styling-to {
+  from {
+    background-image: url('./clients-images/football2.png');
+  }
+
+  to {
+    background-image: url('./clients-images/football.png');
+  }
+}
+
+.drilly-fantasy-scout a {
+  color:orangered;
+}
+
+.what-we-have .procano {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-image: url('./clients-images/procana-featured.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: styling-in 6s infinite;
+}
+
+@keyframes styling-in {
+  from {
+    background-image: url('./clients-images/procano-featured.png');
+  }
+
+  to {
+    background-image: url('./clients-images/procano2.png');
+  }
+}
+
+.procano a {
+  color:yellow;
+
+}
+
+.logo a {
+  display:flex;
+  flex-direction:column;
+  width:350px;
+  /* color: yellow; */
+  padding:0 2rem;
+}
+
+.what-we-have .sports-xpert {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-image: url('./clients-images/sportxpert.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: creating-for 6s infinite;
+}
+
+@keyframes creating-for {
+  from {
+    background-image: url('./clients-images/sportxpert.png');
+  }
+
+  to {
+    background-image: url('./clients-images/sportxpert2.png');
+  }
+}
+
+.sports-xpert a {
+  color: chartreuse;
+}
+
+.what-we-have .penzo {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-image: url('./clients-images/aggression.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: creating-to 6s infinite;
+}
+
+@keyframes creating-to {
+  from {
+    background-image: url('./clients-images/aggression.png');
+  }
+
+  to {
+    background-image: url('./clients-images/aggression2.png');
+  }
+}
+
+.penzo a {
+  color:orange;
+}
+
+.what-we-have .road-tech {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-image: url('./clients-images/roadtech.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: creating-on 6s infinite;
+}
+
+@keyframes creating-on {
+  from {
+    background-image: url('./clients-images/roadtech.png');
+  }
+
+  to {
+    background-image: url('./clients-images/roadtech2.png');
+  }
+}
+
+.what-we-have .pioner-labs {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-image: url('./clients-images/design.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: creating-in 6s infinite;
+}
+
+@keyframes creating-in {
+  from {
+    background-image: url('./clients-images/design2.png');
+  }
+
+  to {
+    background-image: url('./clients-images/roadtech2.png');
+  }
+}
+
+.pioner-labs a {
+  color:gold;
+} 
+
+
+.container .footer {
+  display: flex;
+  width:100%;
+  height: 80%;
+  /* gap:6rem; */
+  /* grid-template-rows: 1fr 1fr 1fr 1fr ; */
+  align-items:center;
+  justify-content: center;
+  background-image:linear-gradient(45deg,orange,indigo,lightblue,violet,cyan,pink);
+}
+
+.footer .overlay {
+  display:flex;
+  /* flex-direction:column; */
+  align-items:center;
+  justify-content:center;
+  background:rgba(76, 0, 130, 0.165);
+  /* background-color: grey; */
+  width:100% ;
+  height:100%;
+  /* gap: 2rem; */
+}
+
+.footer img {
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  animation: turn 5s linear infinite;
+
+}
+
+@keyframes turn {
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.footer .folios  {
+  display:grid;
+  width:80%;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap:10px;
+  align-items:center;
+  justify-content: center;
+} 
+
+ .folios .services {
+  display:flex;
+  flex-direction:column;
+  /* width: 70%; */
+  /* height: 100%; */
+  gap:1rem;
+  align-items:center;
+  justify-content:center;
+ 
+}
+
+.services .heading {
+  display: flex;
+  width:198px;
+  gap:8px;
+  align-items:center;
+  justify-content:end;
+  /* padding-top: 10px; */
+}
+
+.services ul {
+  display:flex;
+  flex-direction:column;
+  width:84%;
+  /* height:55%; */
+  gap:1rem;
+  align-items: center;
+
+}
+
+.services ul li a {
+  display:flex;
+  flex-direction: column;
+  width:360px;
+  align-items: center;
+  justify-content:center;
+  color: white;
+  font-size: 20px;
+  
+}
+
+.company {
+  display:flex;
+  flex-direction:column;
+  /* width: 60%; */
+  /* height: 100%; */
+  gap:1rem;
+  align-items:center;
+  justify-content:center;
+}
+
+.company ul {
+  display:flex;
+  flex-direction:column;
+  /* width:370px; */
+  /* height:55%; */
+  gap:10px;
+  align-items: center;
+  /* margin: 10px; */
+}
+
+.company li a {
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+  justify-content:center;
+  color: white;
+  font-size: 20px;
+}
+
+.folios h3 {
+  color:white;
+  font-size:30px;
+  margin: 10px;
+  background-size: linear;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+  background-image: linear-gradient(45deg, #41a5ee,cyan,#2065c2,violet,gold,orange);
+}
+
+.legal {
+  display:flex;
+  flex-direction:column;
+  /* width: 60%; */
+  /* height: 100%; */
+  gap:1rem;
+  align-items:center;
+  justify-content:center;
+}
+
+.legal ul {
+  display:flex;
+  flex-direction:column;
+  width:86%;
+  /* height:55%; */
+  gap:1rem;
+  align-items: center;
+}
+
+.legal li a {
+  display:flex;
+  flex-direction: column;
+  /* width:100%; */
+  align-items: center;
+  justify-content:center;
+  color: white;
+  font-size: 20px;
+}
+
+.folios li a:hover {
+  color: violet;
+  text-decoration: underline;
+  background-size: linear;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+  background-image: linear-gradient(45deg,orange,white,gold,grey);
+  transition: 400ms ease-in-out;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation:glow 1s ease-in-out infinite alternate ;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.footer .our-contacts {
+  display: flex;
+  width: 30%;
+  height: 56%;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  /* margin: 10px; */
+}
+
+.our-contacts .offices {
+  display: flex;
+  width: 220px;
+  height: 58px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.offices .fonts {
+  display: flex;
+  width: 170px;
+  height: 68px;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  /* margin: 5px; */
+}
+
+.fonts i {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: end;
+  justify-content: center;
+}
+
+.our-contacts h3 {
+  font-size: 27px;
+  background-size: linear;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+  background-image: linear-gradient(45deg,lightblue,orangered,violet,blue,gold);
+}
+
+.our-contacts .places {
+  display:flex;
+  flex-direction:column;
+  width: 100%;
+  height: 40%;
+  align-items:center;
+  gap:10px;
+  margin: 1rem;
+}
+
+
+.places span {
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  height: 25px;
+  font-size:20px;
+  align-items :center;
+}
+
+.our-contacts .location {
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+
+
+
+

@@ -6,6 +6,34 @@
     <title>History</title>
     <link rel="stylesheet" href="./history.css">
     <script src="https://kit.fontawesome.com/61a764966b.js" crossorigin="anonymous"></script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
 </head>
 <body>
     <div class="container5">
@@ -89,8 +117,14 @@
                 </p>
                </div>
             </div>
-            <div class="images">
-                <!-- <img src="./view-images/chimera1.png" alt="chimera contributors"> -->
+            <div class="images mySlides fade">
+                <img src="./view-images/chimera1.png" alt="chimera contributors">
+                <img src="./view-images/chimera5.png" alt="chimera contributors">
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
             </div>
         </div>
         <div class="history-footer">

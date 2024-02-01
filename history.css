@@ -222,7 +222,7 @@ from {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 80%;
+    height: 70%;
     gap: 4rem;
     align-items: center;
     justify-content: center;
@@ -251,7 +251,7 @@ from {
 .history .contents {
     display: flex;
     flex-direction: column;
-    width: 780px;
+    width: 680px;
     height: 80%;
     gap: 1rem;
  
@@ -264,27 +264,75 @@ from {
 .main-contents .images {
     display: flex;
     flex-direction: column;
-    width: 990px;
-    height: 560px;
+    width: 60%;
+    height: 580px;
+    gap: 1rem;
+    position:relative;
     align-items: center;
     justify-content: center;
     /* margin: 3rem; */
     /* padding-top: 4rem; */
     border-radius: 10px;
-    background-image: url('./view-images/chimera1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: slide 5s infinite;
+    /* background-image: url('./view-images/chimera1.png'); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+   
 }
 
-@keyframes slide {
-    from {
-        background-image: url('./view-images/chimera1.png');
-    }
-    to {
-        background-image: url('./view-images/chimera5.png');
-    }
+/* .images img {
+  width: 300px;
+  height: 460px;
+} */
 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: cyan;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+ .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  
+}
+
+.images .dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+ 
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+ .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 
  .history-footer {

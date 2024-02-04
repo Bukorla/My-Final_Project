@@ -28,7 +28,7 @@
   background-image:linear-gradient(45deg,violet,indigo,cyan,violet) ;
   /* background-repeat: no-repeat; */
   background-size: cover;
-  animation: zoom 5s infinite;
+  /* animation: zoom 5s infinite; */
 }
 
 @keyframes zoom {
@@ -305,7 +305,7 @@ from {
   
 }
 
-.images .dot {
+/* .images .dot {
   cursor: pointer;
   height: 12px;
   width: 12px;
@@ -333,7 +333,7 @@ from {
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-}
+} */
 
  .history-footer {
     display: flex;

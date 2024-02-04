@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300&family=Noto+Sans:wght@100&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -20,12 +20,12 @@
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    background-image: url('images/landing-image.png');
+    background-image: url('images/x-mas3.png');
     background-repeat: no-repeat;
     background-size: cover;
     animation: mymove 5s infinite;
   }
-
+/* 
   @keyframes mymove {
     from {
       background-image: url('images/landing-image.png');
@@ -34,7 +34,7 @@
     to {
       background-image: url('images/landing-image2.png');
     }
-  }
+  } */
 
   .container .landing-page {
     display: flex;
@@ -47,7 +47,7 @@
      /* background-color: yellow; */
      background-repeat: no-repeat;
      background-size: cover;
-     animation: mymove 5s infinite;
+     /* animation: mymove 5s infinite; */
   }
 
   .landing-page .nav {
@@ -62,7 +62,7 @@
     background-image:linear-gradient(45deg,violet,indigo,cyan,violet) ;
     /* background-repeat: no-repeat; */
     background-size: cover;
-    animation: zoom 5s infinite;
+    /* animation: zoom 5s infinite; */
   }
 
   @keyframes zoom {
@@ -96,7 +96,7 @@
     /* height: 80%; */
     align-items: center;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 10px;
   }
 
   .nav li {
@@ -113,13 +113,24 @@
   .nav li a:hover {
     text-decoration: underline;
   }
+  .lists {
+    display: flex;
+    width: 60%;
+    gap: 6rem;
+    align-items: center;
+    justify-content: end;
+  }
+
+   .dropdown  .hover a {
+    width: 160px;
+  }
 
   .nav .Chimera-logo {
     display: flex;
     /* width: 50px; */
     align-items: center;
     /* justify-content: center; */
-    font-size: 26px;
+    font-size: 34px;
     /* color: white; */
     background-size: linear;
     -webkit-background-clip: text;
@@ -134,7 +145,7 @@
   .drop-down {
     position: relative;
     display: inline-block;
-    width:14% ;
+    width:67% ;
     height: 90px;
     justify-content: center;
    
@@ -232,8 +243,6 @@
   align-items: center;
   color: white;
   font-size: 30px;
- 
-  
 }
 
 .title ul li {
@@ -794,7 +803,7 @@ z-index: 2;
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 90%;
+  height: 600px;
   gap: 1rem;
 }
 
@@ -802,8 +811,8 @@ z-index: 2;
   display:flex;
   flex-direction: column;
   width: 70%;
-  height: 90%;
-  gap: 1rem;
+  height: 100%;
+  gap: 5rem;
   /* justify-content: center; */
   position:relative;
   margin:auto;
@@ -873,7 +882,7 @@ z-index: 2;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4; scale: 0.4;} 
   to {opacity: 1}
 }
 
@@ -891,7 +900,7 @@ z-index: 2;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 2;
-  background-image: linear-gradient(45deg, pink,cyan,#2065c2,deeppink,gold,indigo);
+  /* background-image: linear-gradient(45deg, pink,cyan,#2065c2,deeppink,gold,indigo); */
 }
 
 .about-us .section {
@@ -899,7 +908,7 @@ z-index: 2;
   flex-direction: column;
   width: 100%;
   /* height: 70%; */
-  gap: 6rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   /* margin: 10px; */
@@ -911,9 +920,9 @@ z-index: 2;
 }
 
 .about-us img {
-  width: 350px;
-  height: 240px;
-  border-radius: 10px;
+  width:160px;
+  height: 160px;
+  border-radius: 50%;
 }
 
 .about-us .number-slide {

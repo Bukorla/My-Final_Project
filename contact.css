@@ -18,7 +18,7 @@ html {
     gap: 4rem;
     justify-content: center;
     align-items: center;
-    background-image: url('./view-images/contact-gif1.png');
+    background-image: url('images/x-mas3.png');
     background-repeat: no-repeat;
     background-size: cover;
     /* animation: transform 5s infinite; */
@@ -140,6 +140,18 @@ html {
 
 .hover i {
   color: gold;
+}
+
+.lists {
+  display: flex;
+  width: 60%;
+  gap: 6rem;
+  align-items: center;
+  justify-content: end;
+}
+
+ .dropdown  .hover a {
+  width: 160px;
 }
 
 .dropdown-contents {

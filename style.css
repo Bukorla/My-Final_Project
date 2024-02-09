@@ -116,8 +116,8 @@
   
   .lists {
     display: flex;
-    width: 60%;
-    gap: 6rem;
+    /* width: 60%; */
+    gap: 4rem;
     align-items: center;
     justify-content: end;
   }
@@ -131,7 +131,7 @@
     /* width: 50px; */
     align-items: center;
     /* justify-content: center; */
-    font-size: 30px;
+    font-size: 35px;
     /* color: white; */
     background-size: linear;
     -webkit-background-clip: text;

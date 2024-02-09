@@ -81,7 +81,7 @@ html {
     /* height: 80%; */
     align-items: center;
     justify-content: space-around;
-    gap: 1rem;
+    /* gap: ; */
   }
 
   .hubspot-nav li {
@@ -99,7 +99,7 @@ html {
     color: aqua;
   }
 
-  .hubspot-nav .Chimera-logo {
+  .hubspot-nav .troan-logo {
     display: flex;
     width: 25%;
     align-items: center;
@@ -118,15 +118,15 @@ html {
 
   .lists {
     display: flex;
-    width: 60%;
-    gap: 6rem;
+    width: 40%;
+    gap: 10px;
     align-items: center;
-    justify-content: end;
+    justify-content: space-around;
   }
 
-   .dropdown  .hover a {
+   /* .dropdown  .hover a {
     width: 160px;
-  }
+  } */
 
   .drop-down {
     position: relative;
@@ -185,7 +185,7 @@ html {
    text-decoration: underline 1px solid;
 }
 
-.Chimera-logo img {
+.troan-logo img {
   animation: rotate 5s linear infinite;
 }
 
@@ -199,10 +199,10 @@ html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 280px;
-    gap: 3rem;
+    height: 60vh;
+    gap: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     /* height: 100%; */
 }
 
@@ -222,7 +222,7 @@ html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* height: 270px; */
+    height: 390px;
     align-items: center;
     justify-content: center;
     /* gap:1rem; */
@@ -234,8 +234,8 @@ html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 87%;
-    gap: 10px;
+    height: 70%;
+    /* gap: ; */
     justify-content: center;
     align-items: center;
     color: white;
@@ -248,7 +248,7 @@ html {
   .title ul li  {
     display: flex;
     width: 100%;
-    height: 140px;
+    height: 120px;
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -258,7 +258,7 @@ html {
   }
 
   .title li h1 {
-    font-size: 60px;
+    font-size: 50px;
     position: relative;
     display: inline-block;
     font-size: 4em;
@@ -387,7 +387,7 @@ html {
     color: deeppink;
   }
 
-  .why-collaborate-with-chimera {
+  .why-collaborate-with-troan {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -397,7 +397,7 @@ html {
     justify-content: center;
   }
 
-  .why-collaborate-with-chimera h1 {
+  .why-collaborate-with-troan h1 {
     display: flex;
     width: 100%;
     font-size: 38px;
@@ -635,7 +635,7 @@ html {
     /* flex-direction:column; */
     align-items:center;
     justify-content:center;
-    background:rgba(0, 0, 0, 0.341);
+    background-color:rgba(0, 0, 0, 0.341);
     /* background-color: grey; */
     width:100% ;
     height:100%;
@@ -668,20 +668,20 @@ html {
    .folios .services {
     display:flex;
     flex-direction:column;
-    /* width: 70%; */
+    width: 97%;
     /* height: 100%; */
     gap:1rem;
     align-items:center;
     justify-content:center;
-   
+   margin: 12px;
   }
   
   .services .heading {
     display: flex;
-    width:198px;
+    width:398px;
     gap:8px;
     align-items:center;
-    justify-content:end;
+    justify-content:start;
     /* padding-top: 10px; */
   }
   
@@ -699,7 +699,7 @@ html {
     display:flex;
     flex-direction: column;
     width:360px;
-    align-items: center;
+    align-items: start;
     justify-content:center;
     color: white;
     font-size: 20px;
@@ -729,23 +729,21 @@ html {
   .company li a {
     display:flex;
     flex-direction: column;
-    width:100%;
-    align-items: center;
+    width:197px;
+    align-items: start;
     justify-content:center;
     color: white;
     font-size: 20px;
   }
   
   .folios h3 {
-    color:white;
+    display:flex;
+    flex-direction:column;
+    width: 190px;
+    align-items: start;
+    color:deeppink;
     font-size:30px;
-    margin: 10px;
-    background-size: linear;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: 2;
-    background-image: linear-gradient(45deg, #41a5ee,cyan,#2065c2,violet,gold,orange);
+    
   }
   
   .legal {
@@ -764,14 +762,14 @@ html {
     width:86%;
     /* height:55%; */
     gap:1rem;
-    align-items: center;
+    align-items: start;
   }
   
   .legal li a {
     display:flex;
     flex-direction: column;
-    /* width:100%; */
-    align-items: center;
+    width:267px;
+    align-items: start;
     justify-content:center;
     color: white;
     font-size: 20px;
@@ -835,11 +833,7 @@ html {
   .our-contacts h3 {
     font-size: 27px;
     background-size: linear;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: 2;
-    background-image: linear-gradient(45deg,lightblue,orangered,violet,blue,gold);
+    color: #fff800;
   }
   
   .our-contacts .places {
@@ -859,7 +853,8 @@ html {
     width:100%;
     height: 25px;
     font-size:20px;
-    align-items :center;
+    align-items :start;
+    color: aliceblue;
   }
   
   .our-contacts .location {
@@ -868,6 +863,124 @@ html {
     gap:6px;
   }
 
+  .hubspot-nav .none {
+    display: none;
+  }
 
+  @media only screen and (width:728px) {
+    .container3 {
+      width: 980px;
+      height: 149vh;
+    }
+  
+    .container3 .contents {
+      display: flex;
+      flex-direction: column;
+      /* height:100vh ; */
+      gap:1rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay .list {
+      display: none;
+      /* gap: 5rem; */
+    }
+
+     .overlay .troan-logo {
+      display:flex;
+      width:100%;
+      height:80px;
+      padding:0 20px;
+      /* align-items:center; */
+      /* justify-content:center; */
+     }
+
+    .overlay .none  {
+      position: relative;
+      display: inline-block;
+      width:30% ;
+      height: 90px;
+      justify-content: center;
+    }
+
+    .none .hover {
+      display: flex;
+      width: 100%;
+      /* height: 67%; */
+      justify-content: center;
+      margin: 2.1rem;
+      font-size:30px ;
+      gap: 10px;
+      color:deeppink;
+      padding-bottom:10px;
+      padding-right: 1rem;
+    }
+    
+    
+    .hover i {
+      color: gold;
+    }
+    
+    .dropdown-contents {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      /* background-image: linear-gradient(45deg,grey,white,grey); */
+      width: 100%;
+      box-shadow: 0 8px 16px 0 rgba(255, 192, 203, 0.679);
+      padding: 12px 16px;
+      margin: 0 10px;
+      z-index: 1;
+      font-size: 20px;
+    }
+    
+    .dropdown-contents ul {
+      display: flex;
+      flex-direction: column;
+      width:100%;
+      align-items: start;
+      gap: 1rem;
+     
+    }
+
+    .dropdown-contents ul li {
+      width:290px;
+      font-size: 25px;
+    }
+
+    .dropdown-contents li a {
+      display: flex;
+      color: orangered;
+    }
+    
+    .dropdown-contents li a:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+    
+    .none:hover  .dropdown-contents {
+        display: block;
+    }
+    
+     .dropdown-contents li a:hover {
+       text-decoration: underline 1px solid;
+    }
+
+    .contents .title h1 {
+      font-size:57px;
+    }
+
+    .container4 .potentials .potential {
+      display:flex;
+      flex-direction:column;
+    }
+
+    
+
+  
+
+    
+  }
 
  

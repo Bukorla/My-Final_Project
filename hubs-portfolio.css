@@ -58,7 +58,7 @@
 
   .folio-nav ul {
     display: flex;
-    width: 100%;
+    width: 90%;
     /* height: 80%; */
     align-items: center;
     justify-content: space-around;
@@ -80,12 +80,12 @@
     color: aqua;
   }
 
-  .folio-nav .Chimera-logo {
+  .folio-nav .TROAN-logo {
     display: flex;
-    width: 25%;
+    width: 280px;
     align-items: center;
-    /* justify-content: center; */
-    font-size: 26px;
+    justify-content: start;
+    font-size: 32px;
     /* color: white; */
     background-size: linear;
     -webkit-background-clip: text;
@@ -100,7 +100,7 @@
   .drop-down {
     position: relative;
     display: inline-block;
-    width:14% ;
+    width:40% ;
     height: 90px;
     justify-content: center;
    
@@ -154,7 +154,7 @@
    text-decoration: underline 1px solid;
 }
 
-.Chimera-logo img {
+.TROAN-logo img {
   animation: rotate 5s linear infinite;
 }
 
@@ -199,6 +199,14 @@
     }
 }
 
+.lists {
+  display: flex;
+  width: 40%;
+  gap: 2.2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .container7 .main-contents {
     display: flex;
     flex-direction: column;
@@ -211,10 +219,11 @@
     display: flex;
     flex-direction: column;
     width:100% ;
-    height: 50%;
+    height: 80%;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: end;
     gap: 2rem;
+    margin-top: 15px;
 }
 
 .container7 .title h1 {

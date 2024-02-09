@@ -86,7 +86,7 @@
 
 .container11 .nav ul  .heading a {
     position: relative;
-    font-size: 28px;
+    font-size: 33px;
         /* text-transform: uppercase; */
   background-image: linear-gradient(
       -225deg,
@@ -120,6 +120,11 @@
     font-size: 20px;
 }
 
+ .lists {
+    display:flex;
+    gap:2rem;
+}
+
 .container11 .nav ul li:hover {
     text-decoration: underline;
     color: greenyellow;
@@ -144,14 +149,15 @@
 }
 
 .container11 .landing h1 {
-    font-size: 40px;
+    font-size: 47px;
     background-size: linear;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-     /* border-radius: 18px; */
+    -webkit-text-fill-color: transparent; 
+     border-radius: 18px;
      z-index: 2;
-     background-image: linear-gradient(45deg,violet,blue,aqua,red,yellow,red,blue,deeppink,white);
+     background-image: linear-gradient(48deg,deeppink,cyan);
+    color: deeppink;
     color: #fff;
     text-transform: uppercase;
     animation: flip 2s infinite;

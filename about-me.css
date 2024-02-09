@@ -11,6 +11,7 @@
     width: 100%;
     flex-direction: column;
     gap: 2rem;
+    justify-content:center;
     align-items: center;
     background-image: url('./portfolio-images/background3.png');
     background-repeat: no-repeat;
@@ -63,7 +64,7 @@
 
 .container12 .nav ul  .heading a {
     position: relative;
-    font-size: 28px;
+    font-size: 34px;
         /* text-transform: uppercase; */
   background-image: linear-gradient(
       -225deg,
@@ -93,9 +94,14 @@
     }
   } 
 
+  .lists {
+    display:flex;
+    gap:4rem;
+}
+
 .container12 .nav ul li a {
     color: white;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .container12 .nav ul li:hover {
@@ -118,7 +124,7 @@
     /* flex-direction: column; */
     width: 98%;
     height: 490px;
-    /* align-items:center; */
+    align-items:center;
     justify-content: center;
    gap:2rem;
 }
@@ -224,7 +230,7 @@
 
 .personal-info .summary {
     display: flex;
-    width: 95%;
+    width: 88%;
     height: 80%;
     flex-direction: column;
     gap: 3rem;
@@ -309,10 +315,11 @@
     background-size: linear;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     /* border-radius: 18px; */
     z-index: 2;
-    background-image: linear-gradient(45deg,blue,indigo,cyan,deeppink,blue,white);
+    color:cyan;
+    /* background-image: linear-gradient(45deg,blue,indigo,cyan,deeppink,blue,white); */
 }
 
 .role-model   .conclude {
@@ -365,6 +372,8 @@
 .quotes .images {
     display: flex;
     gap: 4rem;
+    align-items: center;
+    margin:14px;
 }
 .quotes .images img {
     width: 370px;
@@ -375,7 +384,7 @@
     width: 100%;
     height: 50px;
     /* align-items: center; */
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .quotes a {

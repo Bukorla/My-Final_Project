@@ -25,6 +25,7 @@
   /* left: 0; */
   align-items: center;
   justify-content: center;
+  /* gap: 5rem; */
   background-image:linear-gradient(45deg,violet,indigo,cyan,violet) ;
   /* background-repeat: no-repeat; */
   background-size: cover;
@@ -51,8 +52,8 @@
 }
 
 .history-nav img {
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
 }
 
@@ -62,7 +63,7 @@
   /* height: 80%; */
   align-items: center;
   justify-content: space-around;
-  gap: 1rem;
+  /* gap: 20rem; */
 }
 
 .history-nav li {
@@ -80,12 +81,24 @@
   text-decoration: underline;
 }
 
+.lists {
+  display: flex;
+  width: 60%;
+  /* gap: ; */
+  align-items: center;
+  justify-content: end;
+}
+
+ .dropdown  .hover a {
+  width: 160px;
+}
+
 .history-nav .Chimera-logo {
   display: flex;
   /* width: 60%; */
   align-items: center;
   /* justify-content: center; */
-  font-size: 26px;
+  font-size: 30px;
   /* color: white; */
   background-size: linear;
   -webkit-background-clip: text;
@@ -100,7 +113,7 @@
 .drop-down {
   position: relative;
   display: inline-block;
-  width:14% ;
+  width:24% ;
   height: 90px;
   justify-content: center;
  
@@ -130,16 +143,19 @@ display: none;
 position: absolute;
 background-image: linear-gradient(45deg,grey,white,grey);
 width: 89%;
+/* justify-content: start; */
 box-shadow: 0 8px 16px 0 rgba(255, 192, 203, 0.679);
 padding: 12px 16px;
 margin: 0 10px;
 z-index: 1;
 font-size: 20px;
+
 }
 
 .drop-down .links a {
 display: flex;
 color: indianred;
+justify-content: start;
 }
 
 .links a:hover {

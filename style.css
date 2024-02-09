@@ -113,6 +113,7 @@
   .nav li a:hover {
     text-decoration: underline;
   }
+  
   .lists {
     display: flex;
     width: 60%;
@@ -125,12 +126,12 @@
     width: 160px;
   }
 
-  .nav .Chimera-logo {
+  .nav .troan-logo {
     display: flex;
     /* width: 50px; */
     align-items: center;
     /* justify-content: center; */
-    font-size: 34px;
+    font-size: 30px;
     /* color: white; */
     background-size: linear;
     -webkit-background-clip: text;
@@ -201,7 +202,7 @@
    text-decoration: underline 1px solid;
 }
 
-.Chimera-logo img {
+.troan-logo img {
   animation: rotate 5s linear infinite;
 }
 
@@ -441,9 +442,9 @@
   display: flex;
   width:1180px;
   height: 100%;
-  align-items: end;
+  align-items: center;
   font-size: 70px;
-  justify-content: start;
+  justify-content: center;
   background-size: linear;
   position: relative;
    
@@ -476,6 +477,11 @@ z-index: 2;
     background-position: 200% center;
   }
 } 
+
+.services .heading h1 {
+  display: flex;
+  align-items: center;
+}
 
  .services-contents h1 {
   display: flex;
@@ -1051,7 +1057,7 @@ z-index: 2;
  .footer {
   display: flex;
   width:100%;
-  height: 80%;
+  height: 100%;
   /* gap:6rem; */
   /* grid-template-rows: 1fr 1fr 1fr 1fr ; */
   align-items:center;
@@ -1062,6 +1068,8 @@ z-index: 2;
 
 .footer .overlay {
   display:flex;
+  width:100%;
+  height: 100%;
   /* flex-direction:column; */
   align-items:center;
   justify-content:center;
@@ -1088,9 +1096,9 @@ z-index: 2;
 
 .footer .folios  {
   display:grid;
-  width:80%;
+  width:100%;
   grid-template-columns: 1fr 1fr 1fr ;
-  gap:10px;
+  gap:2rem;
   align-items:center;
   justify-content: center;
 } 
@@ -1108,28 +1116,28 @@ z-index: 2;
 
 .services .heading {
   display: flex;
-  width:198px;
+  width:97%;
   gap:8px;
   align-items:center;
-  justify-content:end;
+  justify-content:start;
   /* padding-top: 10px; */
 }
 
 .services ul {
   display:flex;
   flex-direction:column;
-  width:84%;
+  width:90%;
   /* height:55%; */
   gap:1rem;
   align-items: center;
-
+  padding: 0 2rem;
 }
 
 .services ul li a {
   display:flex;
   flex-direction: column;
   width:360px;
-  align-items: center;
+  align-items:start ;
   justify-content:center;
   color: white;
   font-size: 20px;
@@ -1149,10 +1157,11 @@ z-index: 2;
 .company ul {
   display:flex;
   flex-direction:column;
-  /* width:370px; */
-  /* height:55%; */
+  width:60%;
+  height:45%;
   gap:10px;
-  align-items: center;
+  align-items: start;
+  justify-content: end;
   /* margin: 10px; */
 }
 
@@ -1181,10 +1190,10 @@ z-index: 2;
 .legal {
   display:flex;
   flex-direction:column;
-  /* width: 60%; */
+  width: 90%;
   /* height: 100%; */
   gap:1rem;
-  align-items:center;
+  align-items:start;
   justify-content:center;
 }
 
@@ -1194,7 +1203,7 @@ z-index: 2;
   width:86%;
   /* height:55%; */
   gap:1rem;
-  align-items: center;
+  align-items: start;
 }
 
 .legal li a {
@@ -1289,7 +1298,8 @@ z-index: 2;
   width:100%;
   height: 25px;
   font-size:20px;
-  align-items :center;
+  align-items :start;
+  color: lemonchiffon;
 }
 
 .our-contacts .location {

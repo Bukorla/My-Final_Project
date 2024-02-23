@@ -1,4 +1,4 @@
-
+ 
 * {
     padding: 0;
     margin: 0;
@@ -1314,21 +1314,28 @@ z-index: 2;
 
 
 
-@media only screen and (width:728px) {
+@media only screen and (max-width:728px) {
+
+  /* body {
+    width:100%;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+
   .container {
-    width: 980px;
-    height: 50vh;
+    width: 100%;
+    height: 100vh;
   }
 
   .container .landing-page {
     display: flex;
     flex-direction: column;
-    width: 200%;
+    width: 100%;
     height: 100vh;
     gap: 3rem;
     align-items: center;
     background-image: url('images/landing-image.png');
-     /* background-color: yellow; */
+     background-color: yellow;
      background-repeat: no-repeat;
      background-size: cover;
      animation: mymove 5s infinite;
@@ -1344,5 +1351,35 @@ z-index: 2;
     margin: 0 10px;
     z-index: 1;
     font-size: 20px;
+
+  } */
+
+  body {
+    width: 100%;
+    font-size: 16px; /* Adjust font size for better readability on smaller screens */
+    background-size: cover;
   }
+
+  .container {
+    width: 100%;
+    height: auto; /* Allow the container to adjust its height based on content */
+  }
+
+  .container .landing-page {
+    width: 100%; /* Ensure the landing page takes up the full width of the container */
+    height: auto; /* Allow the landing page to adjust its height based on content */
+    background-size: contain; /* Adjust background size for better responsiveness */
+    background-position: center; /* Center the background image */
+    animation: none; /* Remove animation on smaller screens if needed */
+  }
+
+  .dropdown-contents {
+    position: relative; /* Use relative positioning for dropdown contents on smaller screens */
+    width: 100%; /* Ensure the dropdown takes up the full width of its parent */
+    box-shadow: 0 8px 16px 0 rgba(255, 192, 203, 0.679);
+    padding: 12px 16px;
+    margin: 10px 0; /* Adjust margin for better spacing */
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+
 }

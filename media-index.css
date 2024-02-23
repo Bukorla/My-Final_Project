@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@media only screen and (width:400px) {
+    .container {
+        display: flex;
+        width: 840%;
+        height: 400vh;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+   .container .landing-page {
+        display: flex;
+        width: 100%;
+        height: 400vh;
+        align-items: center;
+        background-size: cover;
+        /* justify-content: center; */
+        gap: 10rem;
+    }
+
+    .landing-page .nav {
+        display: flex;
+        width: 100%;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .nav .overlay {
+        display: flex;
+        width: 100%;
+        height: 47vh;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .landing-page .nav ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 8rem;
+        font-size: 35px;
+    }
+
+    .nav .troan-logo ,img {
+        display: flex;
+        height: 10vh;
+        font-size: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav .lists .hover, .hover a {
+        display: flex;
+        font-size: 45px;
+        /* align-items: center; */
+        gap: 12px;
+    }
+
+    .hover a {
+        display: flex;
+        height: 20px;
+        align-items: center;
+    }
+
+    /* .hover i {
+        height: 20px;
+    } */
+
+    .lists .drop-down {
+        display: flex;
+        height: 80px;
+        gap: 1rem;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .list ul li a {
+        display: flex;
+        font-size: 40px;
+    }
+
+     /* .dropdown-contents .links {
+       display: flex;
+    } */
+
+    .contents .title ul li h1 {
+        display: flex;
+        width: 80%;
+        font-size: 48px;
+        background-color: deeppink;
+        color: deeppink;
+    }
+
+    .title li h4 {
+        font-size: 55px;
+    }
+
+    .title a {
+        width: 250px;
+        height: 60px;
+        font-size: 35px;
+    }
+
+    .container2 {
+        display: flex;
+        width: 840%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container2 .main-contents {
+        display: flex;
+        width: 1740px;
+        align-items: center;
+       justify-content: center;
+    }
+    
+
+    .services {
+        display:flex;
+        gap: 6rem;
+    }
+
+    .service {
+        display:flex;
+        gap: 6rem;
+    }
+
+   .our-apps .image img {
+        font-size:50px;
+    }
+
+    .about-us {
+        width: 80%;
+        height: 80%;
+    }
+
+    .service h1  {
+        width: 100%;
+        font-size:55px;
+    }
+
+    .service p {
+        width: 100%;
+        font-size :45px;
+    }
+
+    .service a {
+        font-size: 45px;
+    }
+
+    .service img {
+        width: 480px;
+    }
+   
+    .clients h2 {
+        font-size: 80em;
+    }
+
+
+    .content {
+        font-size: 55px;
+    }
+
+    .content p {
+        font-size: 40px;
+    }
+
+    .our-blogs {
+        width:50%;
+    } 
+
+    .our-blogs h3 {
+        width:100%;
+        font-size: 40px;
+    }
+    
+    .our-blogs p {
+        width: 100%;
+        font-size: 37px;
+    }
+
+    .our-blogs img {
+        width:350px;
+        height: 220px;
+    }
+
+    .footer {
+        width: 840%;
+    }
+
+    .footer .overlay {
+        width: 5405;
+    }
+
+     .folios ul li a  {
+        font-size: 45px;
+    }
+
+    .folios h3 {
+        font-size: 55px;
+    }
+
+    .our-contacts .places h3{
+        font-size: 50px;
+    }
+
+    .offices i {
+        font-size: 45px;
+    }
+ }
